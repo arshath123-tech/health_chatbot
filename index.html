@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <div CLASS="heading">
+        <h1 >🤖 CISCO BOT</h1>
+    </div>
+
+    <div class="main2">
+        <div class="image" style="align-self: center; display: none;">
+            <h1 style="color: rgb(89, 26, 225);">🤖 CISCO BOT</h1>
+            <img src="image.jpg" alt="chatbot image" height="500px" width="500px" style="margin-left: 30px;">
+        </div>
+    <div class="outline">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>🧠 Mental Health Chatbot</h2>
+            <button class="logout-btn" >Logout</button>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="chat-message bot">Hello <span id="user-name"></span>! 😊 I'm here to support you. How are you feeling today?</div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="hide()" class="hide" >Hide</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="main">
+      <div class="video">
+        <video  controls>
+            <source src="introvideo.mp4" >
+        </video>
+      </div>
+      <div class="showcontainer">
+        <button onclick="show()" class="show" style="border-radius: 30px; font-size: 20px; height: 100px; width: 300px; background-color: rgb(30, 222, 30);">Start Chatting</button><br>
+        </div>
+        </div>
+
+    
+
+<footer>
+    <p>© 2024 Ai Mental Health Chatbot. All rights reserved. | </p>
+        <a href="/privacy-policy">Privacy Policy</a> | 
+        <a href="/terms-of-service">Terms of Service</a>
+   
+    
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+

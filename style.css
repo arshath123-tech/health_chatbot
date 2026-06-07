@@ -1,0 +1,252 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background:url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* Login Page */
+.login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: center;
+    height: 100vh;
+    margin-right: 200px;
+}
+
+.child{
+
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+pass{
+    color: red;
+    text-align: left;
+    padding-bottom: 10px;
+
+}
+
+input {
+    width: 80%;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff758c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #ff5f7e;
+}
+
+/* Chatbot Page */
+
+.heading{
+    margin-bottom: 30px;
+   font-size: 30px;
+    font-weight: 500px;
+    color: blueviolet;
+    text-align: center;
+    top: 0;
+   background-image: url("head.jpg");
+    position: sticky;
+    margin-top: 0;
+    padding:1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 100px;
+
+}
+
+.video{
+    background-color: rgb(62, 62, 232);
+    border-radius: 20px;
+ 
+video{
+    height:500px;
+    width: 600px;
+}
+}
+
+
+.chat-container {
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.outline{
+    background: url("samsung2.jpg");
+    background-size: 445px 690px;
+    padding-left: 24px;
+    padding-bottom: 35px;
+    background-repeat: no-repeat;
+    padding-top: 48px;
+    padding-right: 20px;
+    display: none;  
+    }
+
+.chat-header {
+    background: #ff758c;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    background: #fff;
+    color: #ff758c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.chat-box {
+    height: 450px;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message {
+    padding: 12px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 80%;
+    font-size: 14px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bot {
+    background: #ffb6c1;
+    align-self: flex-start;
+}
+
+.user {
+    background: #ff758c;
+    color: white;
+   align-self: flex-end;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    border-bottom: 2px solid pink;
+}
+
+.showcontainer{
+    align-self: center;
+}
+  
+
+.show{
+    opacity: 0;
+    transform: scale(0);
+    animation: popup 2s ease-out infinite;
+}
+
+@keyframes popup {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .main2{
+    display:flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .image h1{
+    color: rgb(139, 65, 217);
+    padding: 40px 30px;
+    background-image: url("head.jpg");
+    text-align: center;
+    margin-bottom: 30px; 
+  }
+
+  footer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    bottom: 0;
+    position:sticky;
+    background-image: url(head.jpg);
+    margin-top: 35px;
+  }
+
+  footer a{
+    color: red;
+    text-decoration: none;
+  }
+
+  
