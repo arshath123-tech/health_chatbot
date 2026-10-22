@@ -2,8 +2,8 @@
 // API key is loaded from config.js (which is in .gitignore to protect your key).
 // You can also set it via localStorage: localStorage.setItem("GEMINI_API_KEY", "your_key")
 function getApiKey() {
-    if (typeof GEMINI_API_KEY !== "undefined" && GEMINI_API_KEY && GEMINI_API_KEY !== "YOUR_GEMINI_API_KEY_HERE") {
-        return GEMINI_API_KEY;
+    if (typeof window.GEMINI_API_KEY !== "undefined" && window.GEMINI_API_KEY && window.GEMINI_API_KEY !== "YOUR_GEMINI_API_KEY_HERE") {
+        return window.GEMINI_API_KEY;
     }
     return localStorage.getItem("GEMINI_API_KEY") || "";
 }
@@ -200,3 +200,10 @@ function hide() {
     document.querySelector(".image").style.display = "none";
     document.querySelector(".heading").style.display = "block";
 }
+
+// Ensure functions are globally accessible on window for HTML onclick attributes
+window.show = show;
+window.hide = hide;
+window.reset = reset;
+window.sendMessage = sendMessage;
+window.handleKeyPress = handleKeyPress;
